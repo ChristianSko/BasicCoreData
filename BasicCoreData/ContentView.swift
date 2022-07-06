@@ -28,6 +28,8 @@ struct ContentView: View {
                 }
                 .onDelete(perform: deleteItems)
             }
+            .listStyle(PlainListStyle())
+            .navigationTitle("Core Data")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
